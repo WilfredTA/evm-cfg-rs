@@ -12,4 +12,4 @@ ethers-solc = { git = "https://github.com/gakonst/ethers-rs", features = ["proje
 hex = "0.4.3"
 petgraph = "0.6.0"
 primitive-types = "0.11.1"
-revm = { path = "/home/tannr/EthRust/revm/crates/revm" }
+revm = { git = "https://github.com/bluealloy/revm" }
