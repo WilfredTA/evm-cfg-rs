@@ -1,0 +1,571 @@
+   0:   push1 0x60
+   2:   push1 0x40
+   4:   mstore
+   5:   calldatasize
+   6:   iszero
+   7:   push2 0x0076
+   a:   jumpi
+
+   b:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+   d:   calldataload
+   e:   push29 0x0100000000000000000000000000000000000000000000000000000000
+  2c:   swap1
+  2d:   div
+  2e:   push4 0xffffffff # selector("test266151307()")
+  33:   and
+  34:   dup1
+  35:   push4 0x05e49d1d # selector("findWinner(uint256)")
+  3a:   eq
+  3b:   push2 0x0078
+  3e:   jumpi
+
+  3f:   dup1
+  40:   push4 0x27e235e3 # selector("balances(address)")
+  45:   eq
+  46:   push2 0x00d8
+  49:   jumpi
+
+  4a:   dup1
+  4b:   push4 0x387dd9e9 # selector("slots(uint256)")
+  50:   eq
+  51:   push2 0x0122
+  54:   jumpi
+
+  55:   dup1
+  56:   push4 0x8da5cb5b # selector("ideal_warn_timed(uint256,uint128)") selector("owner()")
+  5b:   eq
+  5c:   push2 0x0156
+  5f:   jumpi
+
+  60:   dup1
+  61:   push4 0xed7a4e0b # selector("winnerAddress()")
+  66:   eq
+  67:   push2 0x01a8
+  6a:   jumpi
+
+  6b:   dup1
+  6c:   push4 0xedf26d9b # selector("addresses(uint256)")
+  71:   eq
+  72:   push2 0x01fa
+  75:   jumpi
+
+  76:   jumpdest
+  77:   invalid
+
+  78:   jumpdest
+  79:   callvalue
+  7a:   iszero
+  7b:   push2 0x0080 # selector("conduct_auto(uint256,uint256,uint256)")
+  7e:   jumpi
+
+  7f:   invalid
+
+  80:   jumpdest
+  81:   push2 0x0096
+  84:   push1 0x04
+  86:   dup1
+  87:   dup1
+  88:   calldataload
+  89:   swap1
+  8a:   push1 0x20
+  8c:   add
+  8d:   swap1
+  8e:   swap2
+  8f:   swap1
+  90:   pop
+  91:   pop
+  92:   push2 0x025a
+  95:   jump
+
+  96:   jumpdest
+  97:   push1 0x40
+  99:   mload
+  9a:   dup1
+  9b:   dup3
+  9c:   push20 0xffffffffffffffffffffffffffffffffffffffff
+  b1:   and
+  b2:   push20 0xffffffffffffffffffffffffffffffffffffffff
+  c7:   and
+  c8:   dup2
+  c9:   mstore
+  ca:   push1 0x20
+  cc:   add
+  cd:   swap2
+  ce:   pop
+  cf:   pop
+  d0:   push1 0x40
+  d2:   mload
+  d3:   dup1
+  d4:   swap2
+  d5:   sub
+  d6:   swap1
+  d7:   return
+
+  d8:   jumpdest
+  d9:   callvalue
+  da:   iszero
+  db:   push2 0x00e0
+  de:   jumpi
+
+  df:   invalid
+
+  e0:   jumpdest
+  e1:   push2 0x010c
+  e4:   push1 0x04
+  e6:   dup1
+  e7:   dup1
+  e8:   calldataload
+  e9:   push20 0xffffffffffffffffffffffffffffffffffffffff
+  fe:   and
+  ff:   swap1
+ 100:   push1 0x20
+ 102:   add
+ 103:   swap1
+ 104:   swap2
+ 105:   swap1
+ 106:   pop
+ 107:   pop
+ 108:   push2 0x02ef
+ 10b:   jump
+
+ 10c:   jumpdest
+ 10d:   push1 0x40
+ 10f:   mload
+ 110:   dup1
+ 111:   dup3
+ 112:   dup2
+ 113:   mstore
+ 114:   push1 0x20
+ 116:   add
+ 117:   swap2
+ 118:   pop
+ 119:   pop
+ 11a:   push1 0x40
+ 11c:   mload
+ 11d:   dup1
+ 11e:   swap2
+ 11f:   sub
+ 120:   swap1
+ 121:   return
+
+ 122:   jumpdest
+ 123:   callvalue
+ 124:   iszero
+ 125:   push2 0x012a
+ 128:   jumpi
+
+ 129:   invalid
+
+ 12a:   jumpdest
+ 12b:   push2 0x0140
+ 12e:   push1 0x04
+ 130:   dup1
+ 131:   dup1
+ 132:   calldataload
+ 133:   swap1
+ 134:   push1 0x20
+ 136:   add
+ 137:   swap1
+ 138:   swap2
+ 139:   swap1
+ 13a:   pop
+ 13b:   pop
+ 13c:   push2 0x0307
+ 13f:   jump
+
+ 140:   jumpdest
+ 141:   push1 0x40
+ 143:   mload
+ 144:   dup1
+ 145:   dup3
+ 146:   dup2
+ 147:   mstore
+ 148:   push1 0x20
+ 14a:   add
+ 14b:   swap2
+ 14c:   pop
+ 14d:   pop
+ 14e:   push1 0x40
+ 150:   mload
+ 151:   dup1
+ 152:   swap2
+ 153:   sub
+ 154:   swap1
+ 155:   return
+
+ 156:   jumpdest
+ 157:   callvalue
+ 158:   iszero
+ 159:   push2 0x015e
+ 15c:   jumpi
+
+ 15d:   invalid
+
+ 15e:   jumpdest
+ 15f:   push2 0x0166
+ 162:   push2 0x032c
+ 165:   jump
+
+ 166:   jumpdest
+ 167:   push1 0x40
+ 169:   mload
+ 16a:   dup1
+ 16b:   dup3
+ 16c:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 181:   and
+ 182:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 197:   and
+ 198:   dup2
+ 199:   mstore
+ 19a:   push1 0x20
+ 19c:   add
+ 19d:   swap2
+ 19e:   pop
+ 19f:   pop
+ 1a0:   push1 0x40
+ 1a2:   mload
+ 1a3:   dup1
+ 1a4:   swap2
+ 1a5:   sub
+ 1a6:   swap1
+ 1a7:   return
+
+ 1a8:   jumpdest
+ 1a9:   callvalue
+ 1aa:   iszero
+ 1ab:   push2 0x01b0
+ 1ae:   jumpi
+
+ 1af:   invalid
+
+ 1b0:   jumpdest
+ 1b1:   push2 0x01b8
+ 1b4:   push2 0x0352
+ 1b7:   jump
+
+ 1b8:   jumpdest
+ 1b9:   push1 0x40
+ 1bb:   mload
+ 1bc:   dup1
+ 1bd:   dup3
+ 1be:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 1d3:   and
+ 1d4:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 1e9:   and
+ 1ea:   dup2
+ 1eb:   mstore
+ 1ec:   push1 0x20
+ 1ee:   add
+ 1ef:   swap2
+ 1f0:   pop
+ 1f1:   pop
+ 1f2:   push1 0x40
+ 1f4:   mload
+ 1f5:   dup1
+ 1f6:   swap2
+ 1f7:   sub
+ 1f8:   swap1
+ 1f9:   return
+
+ 1fa:   jumpdest
+ 1fb:   callvalue
+ 1fc:   iszero
+ 1fd:   push2 0x0202
+ 200:   jumpi
+
+ 201:   invalid
+
+ 202:   jumpdest
+ 203:   push2 0x0218
+ 206:   push1 0x04
+ 208:   dup1
+ 209:   dup1
+ 20a:   calldataload
+ 20b:   swap1
+ 20c:   push1 0x20
+ 20e:   add
+ 20f:   swap1
+ 210:   swap2
+ 211:   swap1
+ 212:   pop
+ 213:   pop
+ 214:   push2 0x0378
+ 217:   jump
+
+ 218:   jumpdest
+ 219:   push1 0x40
+ 21b:   mload
+ 21c:   dup1
+ 21d:   dup3
+ 21e:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 233:   and
+ 234:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 249:   and
+ 24a:   dup2
+ 24b:   mstore
+ 24c:   push1 0x20
+ 24e:   add
+ 24f:   swap2
+ 250:   pop
+ 251:   pop
+ 252:   push1 0x40
+ 254:   mload
+ 255:   dup1
+ 256:   swap2
+ 257:   sub
+ 258:   swap1
+ 259:   return
+
+ 25a:   jumpdest
+ 25b:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 25d:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 25f:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 261:   swap1
+ 262:   pop
+
+ 263:   jumpdest
+ 264:   push1 0x04
+ 266:   dup1
+ 267:   sload
+ 268:   swap1
+ 269:   pop
+ 26a:   dup2
+ 26b:   lt
+ 26c:   iszero
+ 26d:   push2 0x02e8
+ 270:   jumpi
+
+ 271:   push1 0x04
+ 273:   dup2
+ 274:   dup2
+ 275:   sload
+ 276:   dup2
+ 277:   lt
+ 278:   iszero
+ 279:   iszero
+ 27a:   push2 0x027f
+ 27d:   jumpi
+
+ 27e:   invalid
+
+ 27f:   jumpdest
+ 280:   swap1
+ 281:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 283:   mstore
+ 284:   push1 0x20
+ 286:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 288:   keccak256
+ 289:   swap1
+ 28a:   add
+ 28b:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 28d:   jumpdest
+ 28e:   pop
+ 28f:   sload
+ 290:   dup4
+ 291:   gt
+ 292:   iszero
+ 293:   iszero
+ 294:   push2 0x02da
+ 297:   jumpi
+
+ 298:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 29a:   dup2
+ 29b:   dup2
+ 29c:   sload
+ 29d:   dup2
+ 29e:   lt
+ 29f:   iszero
+ 2a0:   iszero
+ 2a1:   push2 0x02a6
+ 2a4:   jumpi
+
+ 2a5:   invalid
+
+ 2a6:   jumpdest
+ 2a7:   swap1
+ 2a8:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 2aa:   mstore
+ 2ab:   push1 0x20
+ 2ad:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 2af:   keccak256
+ 2b0:   swap1
+ 2b1:   add
+ 2b2:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 2b4:   jumpdest
+ 2b5:   swap1
+ 2b6:   sload
+ 2b7:   swap1
+ 2b8:   push2 0x0100
+ 2bb:   exp
+ 2bc:   swap1
+ 2bd:   div
+ 2be:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 2d3:   and
+ 2d4:   swap2
+ 2d5:   pop
+ 2d6:   push2 0x02e9
+ 2d9:   jump
+
+ 2da:   jumpdest
+
+ 2db:   jumpdest
+ 2dc:   dup1
+ 2dd:   dup1
+ 2de:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 2e0:   add
+ 2e1:   swap2
+ 2e2:   pop
+ 2e3:   pop
+ 2e4:   push2 0x0263
+ 2e7:   jump
+
+ 2e8:   jumpdest
+
+ 2e9:   jumpdest
+ 2ea:   pop
+ 2eb:   swap2
+ 2ec:   swap1
+ 2ed:   pop
+ 2ee:   jump
+
+ 2ef:   jumpdest
+ 2f0:   push1 0x03
+ 2f2:   push1 0x20
+ 2f4:   mstore
+ 2f5:   dup1
+ 2f6:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 2f8:   mstore
+ 2f9:   push1 0x40
+ 2fb:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 2fd:   keccak256
+ 2fe:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 300:   swap2
+ 301:   pop
+ 302:   swap1
+ 303:   pop
+ 304:   sload
+ 305:   dup2
+ 306:   jump
+
+ 307:   jumpdest
+ 308:   push1 0x04
+ 30a:   dup2
+ 30b:   dup2
+ 30c:   sload
+ 30d:   dup2
+ 30e:   lt
+ 30f:   iszero
+ 310:   iszero
+ 311:   push2 0x0316
+ 314:   jumpi
+
+ 315:   invalid
+
+ 316:   jumpdest
+ 317:   swap1
+ 318:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 31a:   mstore
+ 31b:   push1 0x20
+ 31d:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 31f:   keccak256
+ 320:   swap1
+ 321:   add
+ 322:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 324:   jumpdest
+ 325:   swap2
+ 326:   pop
+ 327:   swap1
+ 328:   pop
+ 329:   sload
+ 32a:   dup2
+ 32b:   jump
+
+ 32c:   jumpdest
+ 32d:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 32f:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 331:   swap1
+ 332:   sload
+ 333:   swap1
+ 334:   push2 0x0100
+ 337:   exp
+ 338:   swap1
+ 339:   div
+ 33a:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 34f:   and
+ 350:   dup2
+ 351:   jump
+
+ 352:   jumpdest
+ 353:   push1 0x02 # selector("razor_balance(bool)")
+ 355:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 357:   swap1
+ 358:   sload
+ 359:   swap1
+ 35a:   push2 0x0100
+ 35d:   exp
+ 35e:   swap1
+ 35f:   div
+ 360:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 375:   and
+ 376:   dup2
+ 377:   jump
+
+ 378:   jumpdest
+ 379:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 37b:   dup2
+ 37c:   dup2
+ 37d:   sload
+ 37e:   dup2
+ 37f:   lt
+ 380:   iszero
+ 381:   iszero
+ 382:   push2 0x0387
+ 385:   jumpi
+
+ 386:   invalid
+
+ 387:   jumpdest
+ 388:   swap1
+ 389:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 38b:   mstore
+ 38c:   push1 0x20
+ 38e:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 390:   keccak256
+ 391:   swap1
+ 392:   add
+ 393:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 395:   jumpdest
+ 396:   swap2
+ 397:   pop
+ 398:   sload
+ 399:   swap1
+ 39a:   push2 0x0100
+ 39d:   exp
+ 39e:   swap1
+ 39f:   div
+ 3a0:   push20 0xffffffffffffffffffffffffffffffffffffffff
+ 3b5:   and
+ 3b6:   dup2
+ 3b7:   jump
+
+ 3b8:   stop
+
+ 3b9:   log1
+ 3ba:   push6 0x627a7a723058
+ 3c1:   keccak256
+ 3c2:   invalid_23
+
+ 3c3:   invalid_ad
+
+ 3c4:   push1 0xad
+ 3c6:   push20 0x9ca2f26b99ccd389d4b64386a3d3f9de55e87056
+ 3db:   invalid_ce
+
+ 3dc:   selfdestruct
+
+ 3dd:   push17 0xd9efe3fa00290000000000000000000000
+
